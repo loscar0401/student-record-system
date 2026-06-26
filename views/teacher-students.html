@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Students</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar teacher-sidebar">
+      <div class="sidebar-logo">
+        Teacher Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/teacher/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/teacher/students" class="sidebar-link active">Students</a>
+        <a href="/teacher/grades" class="sidebar-link">Grades</a>
+        <a href="/teacher/subjects" class="sidebar-link">Subjects</a>
+        <a href="/teacher/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>Students</h2>
+
+        <div class="user-info">
+          <div class="avatar teacher-avatar">T</div>
+          <div>
+            <p id="emailInfo">teacher@email.com</p>
+            <small id="roleInfo">teacher</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Manage Students</h1>
+        <p>View students assigned to your classes and manage their academic records.</p>
+      </section>
+
+      <section class="student-management-grid">
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">👨‍🎓</div>
+          <p>Total Students</p>
+          <h2>128</h2>
+          <span>Assigned students</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">🏫</div>
+          <p>Sections</p>
+          <h2>4</h2>
+          <span>Handled sections</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📚</div>
+          <p>Active Subjects</p>
+          <h2>5</h2>
+          <span>Current semester</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📝</div>
+          <p>For Grading</p>
+          <h2>24</h2>
+          <span>Pending grade updates</span>
+        </div>
+
+      </section>
+
+      <section class="students-toolbar">
+        <div class="search-box">
+          <input type="text" placeholder="Search student by name, student number, or section">
+        </div>
+
+        <div class="filter-box">
+          <select>
+            <option>All Sections</option>
+            <option>BSIT 2A</option>
+            <option>BSIT 2B</option>
+            <option>BSIT 3A</option>
+            <option>BSIT 4A</option>
+          </select>
+
+          <select>
+            <option>All Year Levels</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="section-header">
+          <h2>Student List</h2>
+          <p>Students currently assigned to your classes.</p>
+        </div>
+
+        <table class="student-table teacher-students-table">
+          <thead>
+            <tr>
+              <th>Student No.</th>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Year</th>
+              <th>Section</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2026-001</td>
+              <td>
+                <div class="student-name-cell">
+                  <div class="student-avatar">J</div>
+                  <div>
+                    <strong>Juan Dela Cruz</strong>
+                    <span>juan@student.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>BSIT</td>
+              <td>4th Year</td>
+              <td>BSIT 4A</td>
+              <td><span class="status-badge passed">Active</span></td>
+              <td>
+                <div class="table-actions">
+                  <button class="table-btn view-btn">View</button>
+                  <button class="table-btn edit-btn">Grades</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-002</td>
+              <td>
+                <div class="student-name-cell">
+                  <div class="student-avatar">A</div>
+                  <div>
+                    <strong>Ana Santos</strong>
+                    <span>ana@student.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>BSIT</td>
+              <td>3rd Year</td>
+              <td>BSIT 3A</td>
+              <td><span class="status-badge passed">Active</span></td>
+              <td>
+                <div class="table-actions">
+                  <button class="table-btn view-btn">View</button>
+                  <button class="table-btn edit-btn">Grades</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-003</td>
+              <td>
+                <div class="student-name-cell">
+                  <div class="student-avatar">M</div>
+                  <div>
+                    <strong>Mark Reyes</strong>
+                    <span>mark@student.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>BSIT</td>
+              <td>2nd Year</td>
+              <td>BSIT 2B</td>
+              <td><span class="status-badge neutral">Enrolled</span></td>
+              <td>
+                <div class="table-actions">
+                  <button class="table-btn view-btn">View</button>
+                  <button class="table-btn edit-btn">Grades</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-004</td>
+              <td>
+                <div class="student-name-cell">
+                  <div class="student-avatar">C</div>
+                  <div>
+                    <strong>Carla Mendoza</strong>
+                    <span>carla@student.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>BSIT</td>
+              <td>2nd Year</td>
+              <td>BSIT 2A</td>
+              <td><span class="status-badge pending">Pending</span></td>
+              <td>
+                <div class="table-actions">
+                  <button class="table-btn view-btn">View</button>
+                  <button class="table-btn edit-btn">Grades</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-005</td>
+              <td>
+                <div class="student-name-cell">
+                  <div class="student-avatar">P</div>
+                  <div>
+                    <strong>Paolo Cruz</strong>
+                    <span>paolo@student.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>BSIT</td>
+              <td>4th Year</td>
+              <td>BSIT 4A</td>
+              <td><span class="status-badge passed">Active</span></td>
+              <td>
+                <div class="table-actions">
+                  <button class="table-btn view-btn">View</button>
+                  <button class="table-btn edit-btn">Grades</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

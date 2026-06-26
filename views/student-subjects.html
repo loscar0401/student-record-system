@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Subjects</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        Student Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/student/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/student/profile" class="sidebar-link">Profile</a>
+        <a href="/student/grades" class="sidebar-link">Grades</a>
+        <a href="/student/subjects" class="sidebar-link active">Subjects</a>
+        <a href="/student/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>My Subjects</h2>
+
+        <div class="user-info">
+          <div class="avatar">S</div>
+          <div>
+            <p id="emailInfo">student@email.com</p>
+            <small id="roleInfo">student</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Enrolled Subjects</h1>
+        <p>View all subjects assigned to your current semester.</p>
+      </section>
+
+      <section class="subject-summary-grid">
+
+        <div class="subject-summary-card">
+          <p>Total Subjects</p>
+          <h2>6</h2>
+        </div>
+
+        <div class="subject-summary-card">
+          <p>Total Units</p>
+          <h2>18</h2>
+        </div>
+
+        <div class="subject-summary-card">
+          <p>Current Semester</p>
+          <h2>1st</h2>
+        </div>
+
+        <div class="subject-summary-card">
+          <p>School Year</p>
+          <h2>2026</h2>
+        </div>
+
+      </section>
+
+      <section class="subjects-grid">
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT101</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>Web Development</h2>
+          <p>Learn frontend and backend web application development.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Mr. Santos</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Mon 10:00 AM - 12:00 PM</strong>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT102</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>Database Systems</h2>
+          <p>Study database design, SQL queries, and data relationships.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Ms. Reyes</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Tue 1:00 PM - 3:00 PM</strong>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT103</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>Software Engineering</h2>
+          <p>Understand software planning, design, testing, and maintenance.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Mr. Cruz</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Wed 8:00 AM - 10:00 AM</strong>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT104</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>System Integration</h2>
+          <p>Learn how different systems communicate and work together.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Ms. Garcia</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Thu 9:00 AM - 11:00 AM</strong>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT105</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>Capstone Project</h2>
+          <p>Develop a complete IT project from planning to implementation.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Dr. Mendoza</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Fri 1:00 PM - 4:00 PM</strong>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-card-header">
+            <h3>IT106</h3>
+            <span class="subject-badge">3 Units</span>
+          </div>
+
+          <h2>Information Security</h2>
+          <p>Study cybersecurity concepts, authentication, and data protection.</p>
+
+          <div class="subject-info">
+            <span>Teacher</span>
+            <strong>Mr. Rivera</strong>
+          </div>
+
+          <div class="subject-info">
+            <span>Schedule</span>
+            <strong>Sat 8:00 AM - 10:00 AM</strong>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

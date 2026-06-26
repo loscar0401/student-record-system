@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Schedule</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar teacher-sidebar">
+      <div class="sidebar-logo">
+        Teacher Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/teacher/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/teacher/students" class="sidebar-link">Students</a>
+        <a href="/teacher/grades" class="sidebar-link">Grades</a>
+        <a href="/teacher/subjects" class="sidebar-link">Subjects</a>
+        <a href="/teacher/schedule" class="sidebar-link active">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>Teaching Schedule</h2>
+
+        <div class="user-info">
+          <div class="avatar teacher-avatar">T</div>
+          <div>
+            <p id="emailInfo">teacher@email.com</p>
+            <small id="roleInfo">teacher</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>My Weekly Schedule</h1>
+        <p>View your assigned classes, rooms, sections, and teaching times.</p>
+      </section>
+
+      <section class="teacher-schedule-overview">
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📅</div>
+          <p>Today’s Classes</p>
+          <h2>3</h2>
+          <span>Scheduled for today</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📚</div>
+          <p>Total Subjects</p>
+          <h2>5</h2>
+          <span>Handled subjects</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">🏫</div>
+          <p>Sections</p>
+          <h2>4</h2>
+          <span>Assigned sections</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">🕒</div>
+          <p>Weekly Hours</p>
+          <h2>18</h2>
+          <span>Total teaching hours</span>
+        </div>
+
+      </section>
+
+      <section class="teacher-calendar-layout">
+
+        <div class="teacher-weekly-list">
+
+          <div class="teacher-day-card">
+            <div class="teacher-day-header">
+              <h2>Monday</h2>
+              <span>2 Classes</span>
+            </div>
+
+            <div class="teacher-class-card">
+              <div class="teacher-class-time">
+                <strong>8:00 AM</strong>
+                <span>10:00 AM</span>
+              </div>
+
+              <div class="teacher-class-info">
+                <h3>Web Development</h3>
+                <p>IT101 • BSIT 2A</p>
+                <div class="teacher-class-tags">
+                  <span>Room 301</span>
+                  <span>35 Students</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="teacher-class-card">
+              <div class="teacher-class-time">
+                <strong>1:00 PM</strong>
+                <span>3:00 PM</span>
+              </div>
+
+              <div class="teacher-class-info">
+                <h3>System Integration</h3>
+                <p>IT104 • BSIT 4A</p>
+                <div class="teacher-class-tags">
+                  <span>Room 305</span>
+                  <span>33 Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-day-card">
+            <div class="teacher-day-header">
+              <h2>Tuesday</h2>
+              <span>1 Class</span>
+            </div>
+
+            <div class="teacher-class-card">
+              <div class="teacher-class-time">
+                <strong>10:00 AM</strong>
+                <span>12:00 PM</span>
+              </div>
+
+              <div class="teacher-class-info">
+                <h3>Database Systems</h3>
+                <p>IT102 • BSIT 2B</p>
+                <div class="teacher-class-tags">
+                  <span>Computer Lab 2</span>
+                  <span>32 Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-day-card">
+            <div class="teacher-day-header">
+              <h2>Wednesday</h2>
+              <span>1 Class</span>
+            </div>
+
+            <div class="teacher-class-card">
+              <div class="teacher-class-time">
+                <strong>1:00 PM</strong>
+                <span>3:00 PM</span>
+              </div>
+
+              <div class="teacher-class-info">
+                <h3>Software Engineering</h3>
+                <p>IT103 • BSIT 3A</p>
+                <div class="teacher-class-tags">
+                  <span>Room 204</span>
+                  <span>28 Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-day-card">
+            <div class="teacher-day-header">
+              <h2>Thursday</h2>
+              <span>No Class</span>
+            </div>
+
+            <div class="no-class-box">
+              <p>No scheduled class for this day.</p>
+            </div>
+          </div>
+
+          <div class="teacher-day-card">
+            <div class="teacher-day-header">
+              <h2>Friday</h2>
+              <span>1 Class</span>
+            </div>
+
+            <div class="teacher-class-card">
+              <div class="teacher-class-time">
+                <strong>9:00 AM</strong>
+                <span>11:00 AM</span>
+              </div>
+
+              <div class="teacher-class-info">
+                <h3>Information Security</h3>
+                <p>IT106 • BSIT 4A</p>
+                <div class="teacher-class-tags">
+                  <span>Computer Lab 1</span>
+                  <span>30 Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="teacher-schedule-side-panel">
+
+          <div class="teacher-panel">
+            <div class="section-header">
+              <h2>Next Class</h2>
+              <p>Your upcoming class today.</p>
+            </div>
+
+            <div class="next-class-box">
+              <h3>Web Development</h3>
+              <p>BSIT 2A</p>
+
+              <div class="next-class-detail">
+                <span>Time</span>
+                <strong>8:00 AM - 10:00 AM</strong>
+              </div>
+
+              <div class="next-class-detail">
+                <span>Room</span>
+                <strong>Room 301</strong>
+              </div>
+
+              <div class="next-class-detail">
+                <span>Students</span>
+                <strong>35 Students</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-panel">
+            <div class="section-header">
+              <h2>Schedule Summary</h2>
+              <p>Weekly teaching overview.</p>
+            </div>
+
+            <div class="schedule-summary-list">
+              <div>
+                <span>Monday</span>
+                <strong>2 Classes</strong>
+              </div>
+
+              <div>
+                <span>Tuesday</span>
+                <strong>1 Class</strong>
+              </div>
+
+              <div>
+                <span>Wednesday</span>
+                <strong>1 Class</strong>
+              </div>
+
+              <div>
+                <span>Thursday</span>
+                <strong>No Class</strong>
+              </div>
+
+              <div>
+                <span>Friday</span>
+                <strong>1 Class</strong>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

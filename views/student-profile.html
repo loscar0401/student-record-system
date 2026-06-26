@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        Student Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/student/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/student/profile" class="sidebar-link active">Profile</a>
+        <a href="/student/grades" class="sidebar-link">Grades</a>
+        <a href="/student/subjects" class="sidebar-link">Subjects</a>
+        <a href="/student/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>My Profile</h2>
+
+        <div class="user-info">
+          <div class="avatar">S</div>
+          <div>
+            <p id="emailInfo">student@email.com</p>
+            <small id="roleInfo">student</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Profile Information</h1>
+        <p>Manage your personal information and profile photo.</p>
+      </section>
+
+      <section class="profile-layout">
+
+        <div class="profile-card">
+          <div class="profile-image">
+            <span>S</span>
+          </div>
+
+          <h2 id="profileName">Juan Dela Cruz</h2>
+          <p id="profileStudentNo">Student No: 2026-001</p>
+          <p id="profileCourse">BSIT - 4th Year</p>
+
+          <button class="secondary-btn">Change Picture</button>
+        </div>
+
+        <div class="profile-form-card">
+          <h2>Personal Details</h2>
+
+          <form class="profile-form">
+
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="firstName" value="Juan">
+            </div>
+
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="lastName" value="Dela Cruz">
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="email" value="student@email.com" readonly>
+            </div>
+
+            <div class="form-group">
+              <label>Student Number</label>
+              <input type="text" id="studentNumber" value="2026-001" readonly>
+            </div>
+
+            <div class="form-group">
+              <label>Course</label>
+              <input type="text" id="course" value="BSIT">
+            </div>
+
+            <div class="form-group">
+              <label>Year Level</label>
+              <input type="text" id="yearLevel" value="4th Year">
+            </div>
+
+            <div class="form-group">
+              <label>Contact Number</label>
+              <input type="text" id="contactNumber" value="09123456789">
+            </div>
+
+            <div class="form-group">
+              <label>Address</label>
+              <input type="text" id="address" value="Malabon City">
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="primary-btn">Save Changes</button>
+              <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

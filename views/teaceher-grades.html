@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Grades</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar teacher-sidebar">
+      <div class="sidebar-logo">
+        Teacher Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/teacher/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/teacher/students" class="sidebar-link">Students</a>
+        <a href="/teacher/grades" class="sidebar-link active">Grades</a>
+        <a href="/teacher/subjects" class="sidebar-link">Subjects</a>
+        <a href="/teacher/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>Manage Grades</h2>
+
+        <div class="user-info">
+          <div class="avatar teacher-avatar">T</div>
+          <div>
+            <p id="emailInfo">teacher@email.com</p>
+            <small id="roleInfo">teacher</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Student Grades</h1>
+        <p>View, encode, and update student grades for your assigned subjects.</p>
+      </section>
+
+      <section class="grades-management-grid">
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📝</div>
+          <p>Pending Grades</p>
+          <h2>24</h2>
+          <span>Students need grade update</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">✅</div>
+          <p>Completed Grades</p>
+          <h2>104</h2>
+          <span>Already encoded</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📚</div>
+          <p>Subjects</p>
+          <h2>5</h2>
+          <span>Handled this semester</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">👨‍🎓</div>
+          <p>Total Students</p>
+          <h2>128</h2>
+          <span>Across all classes</span>
+        </div>
+
+      </section>
+
+      <section class="grade-editor-section">
+
+        <div class="grade-form-card">
+          <div class="section-header">
+            <h2>Encode Grade</h2>
+            <p>Select student and subject before updating grades.</p>
+          </div>
+
+          <form class="grade-form">
+
+            <div class="form-group">
+              <label>Subject</label>
+              <select>
+                <option>Web Development - IT101</option>
+                <option>Database Systems - IT102</option>
+                <option>Software Engineering - IT103</option>
+                <option>System Integration - IT104</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Student</label>
+              <select>
+                <option>Juan Dela Cruz - 2026-001</option>
+                <option>Ana Santos - 2026-002</option>
+                <option>Mark Reyes - 2026-003</option>
+                <option>Carla Mendoza - 2026-004</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Prelim Grade</label>
+              <input type="text" placeholder="Example: 1.75">
+            </div>
+
+            <div class="form-group">
+              <label>Midterm Grade</label>
+              <input type="text" placeholder="Example: 1.50">
+            </div>
+
+            <div class="form-group">
+              <label>Final Grade</label>
+              <input type="text" placeholder="Example: 1.75">
+            </div>
+
+            <div class="form-group">
+              <label>Remarks</label>
+              <select>
+                <option>Passed</option>
+                <option>Failed</option>
+                <option>Incomplete</option>
+                <option>Pending</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="primary-btn">Save Grade</button>
+              <button type="button" class="cancel-btn">Clear</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="grade-preview-card">
+          <div class="section-header">
+            <h2>Selected Record</h2>
+            <p>Grade summary preview.</p>
+          </div>
+
+          <div class="grade-preview-profile">
+            <div class="student-avatar large-avatar">J</div>
+            <div>
+              <h3>Juan Dela Cruz</h3>
+              <p>2026-001 • BSIT 4A</p>
+            </div>
+          </div>
+
+          <div class="preview-info-list">
+            <div class="preview-info-item">
+              <span>Subject</span>
+              <strong>Web Development</strong>
+            </div>
+
+            <div class="preview-info-item">
+              <span>Prelim</span>
+              <strong>1.75</strong>
+            </div>
+
+            <div class="preview-info-item">
+              <span>Midterm</span>
+              <strong>1.50</strong>
+            </div>
+
+            <div class="preview-info-item">
+              <span>Final</span>
+              <strong>1.75</strong>
+            </div>
+
+            <div class="preview-info-item">
+              <span>Final Average</span>
+              <strong>1.67</strong>
+            </div>
+
+            <div class="preview-info-item">
+              <span>Remarks</span>
+              <strong><span class="status-badge passed">Passed</span></strong>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="table-section">
+        <div class="section-header">
+          <h2>Grade Records</h2>
+          <p>List of encoded and pending student grades.</p>
+        </div>
+
+        <table class="student-table teacher-grades-table">
+          <thead>
+            <tr>
+              <th>Student No.</th>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Prelim</th>
+              <th>Midterm</th>
+              <th>Final</th>
+              <th>Average</th>
+              <th>Remarks</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2026-001</td>
+              <td>Juan Dela Cruz</td>
+              <td>Web Development</td>
+              <td>1.75</td>
+              <td>1.50</td>
+              <td>1.75</td>
+              <td><strong>1.67</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+              <td>
+                <button class="table-btn edit-btn">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-002</td>
+              <td>Ana Santos</td>
+              <td>Database Systems</td>
+              <td>1.50</td>
+              <td>1.75</td>
+              <td>1.50</td>
+              <td><strong>1.58</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+              <td>
+                <button class="table-btn edit-btn">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-003</td>
+              <td>Mark Reyes</td>
+              <td>Software Engineering</td>
+              <td>2.00</td>
+              <td>2.25</td>
+              <td>Pending</td>
+              <td><strong>Pending</strong></td>
+              <td><span class="status-badge pending">Pending</span></td>
+              <td>
+                <button class="table-btn edit-btn">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2026-004</td>
+              <td>Carla Mendoza</td>
+              <td>System Integration</td>
+              <td>3.00</td>
+              <td>3.25</td>
+              <td>3.00</td>
+              <td><strong>3.08</strong></td>
+              <td><span class="status-badge failed">Failed</span></td>
+              <td>
+                <button class="table-btn edit-btn">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

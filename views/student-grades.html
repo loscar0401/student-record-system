@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grades</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        Student Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/student/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/student/profile" class="sidebar-link">Profile</a>
+        <a href="/student/grades" class="sidebar-link active">Grades</a>
+        <a href="/student/subjects" class="sidebar-link">Subjects</a>
+        <a href="/student/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>My Grades</h2>
+
+        <div class="user-info">
+          <div class="avatar">S</div>
+          <div>
+            <p id="emailInfo">student@email.com</p>
+            <small id="roleInfo">student</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Academic Grades</h1>
+        <p>View your subject grades, units, remarks, and academic status.</p>
+      </section>
+
+      <section class="grades-summary-grid">
+
+        <div class="grade-summary-card">
+          <p>General Average</p>
+          <h2>1.75</h2>
+          <span class="status-badge passed">Good Standing</span>
+        </div>
+
+        <div class="grade-summary-card">
+          <p>Total Subjects</p>
+          <h2>6</h2>
+          <span class="status-badge neutral">Current Semester</span>
+        </div>
+
+        <div class="grade-summary-card">
+          <p>Passed Subjects</p>
+          <h2>5</h2>
+          <span class="status-badge passed">Passed</span>
+        </div>
+
+        <div class="grade-summary-card">
+          <p>Pending Grades</p>
+          <h2>1</h2>
+          <span class="status-badge pending">Pending</span>
+        </div>
+
+      </section>
+
+      <section class="table-section">
+        <div class="section-header">
+          <h2>Grade Report</h2>
+          <p>Grades are view-only for student accounts.</p>
+        </div>
+
+        <table class="student-table grades-table">
+          <thead>
+            <tr>
+              <th>Subject Code</th>
+              <th>Subject Name</th>
+              <th>Units</th>
+              <th>Prelim</th>
+              <th>Midterm</th>
+              <th>Final</th>
+              <th>Final Grade</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>IT101</td>
+              <td>Web Development</td>
+              <td>3</td>
+              <td>1.75</td>
+              <td>1.50</td>
+              <td>1.75</td>
+              <td><strong>1.67</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+            </tr>
+
+            <tr>
+              <td>IT102</td>
+              <td>Database Systems</td>
+              <td>3</td>
+              <td>2.00</td>
+              <td>1.75</td>
+              <td>1.75</td>
+              <td><strong>1.83</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+            </tr>
+
+            <tr>
+              <td>IT103</td>
+              <td>Software Engineering</td>
+              <td>3</td>
+              <td>1.50</td>
+              <td>1.75</td>
+              <td>1.50</td>
+              <td><strong>1.58</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+            </tr>
+
+            <tr>
+              <td>IT104</td>
+              <td>System Integration</td>
+              <td>3</td>
+              <td>2.25</td>
+              <td>2.00</td>
+              <td>2.00</td>
+              <td><strong>2.08</strong></td>
+              <td><span class="status-badge passed">Passed</span></td>
+            </tr>
+
+            <tr>
+              <td>IT105</td>
+              <td>Capstone Project</td>
+              <td>3</td>
+              <td>1.75</td>
+              <td>Pending</td>
+              <td>Pending</td>
+              <td><strong>Pending</strong></td>
+              <td><span class="status-badge pending">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

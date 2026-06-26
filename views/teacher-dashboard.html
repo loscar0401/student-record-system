@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar teacher-sidebar">
+      <div class="sidebar-logo">
+        Teacher Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/teacher/dashboard" class="sidebar-link active">Dashboard</a>
+        <a href="/teacher/students" class="sidebar-link">Students</a>
+        <a href="/teacher/grades" class="sidebar-link">Grades</a>
+        <a href="/teacher/subjects" class="sidebar-link">Subjects</a>
+        <a href="/teacher/schedule" class="sidebar-link">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>Teacher Dashboard</h2>
+
+        <div class="user-info">
+          <div class="avatar teacher-avatar">T</div>
+          <div>
+            <p id="emailInfo">teacher@email.com</p>
+            <small id="roleInfo">teacher</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Welcome back, Prof. Santos!</h1>
+        <p>Manage your students, subjects, grades, and teaching schedule.</p>
+      </section>
+
+      <section class="teacher-card-grid">
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">👨‍🎓</div>
+          <p>Total Students</p>
+          <h2>128</h2>
+          <span>Across all assigned classes</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📚</div>
+          <p>Subjects Handled</p>
+          <h2>5</h2>
+          <span>Current semester</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📝</div>
+          <p>Pending Grades</p>
+          <h2>24</h2>
+          <span>Need grade update</span>
+        </div>
+
+        <div class="teacher-dashboard-card">
+          <div class="teacher-card-icon">📅</div>
+          <p>Today’s Classes</p>
+          <h2>3</h2>
+          <span>Scheduled for today</span>
+        </div>
+
+      </section>
+
+      <section class="teacher-dashboard-grid">
+
+        <div class="teacher-panel">
+          <div class="section-header">
+            <h2>Today’s Schedule</h2>
+            <p>Your classes for today</p>
+          </div>
+
+          <div class="teacher-schedule-list">
+
+            <div class="teacher-schedule-item">
+              <div class="schedule-time-box">
+                <strong>8:00</strong>
+                <span>AM</span>
+              </div>
+
+              <div>
+                <h3>Web Development</h3>
+                <p>BSIT 2A • Room 301</p>
+              </div>
+            </div>
+
+            <div class="teacher-schedule-item">
+              <div class="schedule-time-box">
+                <strong>10:00</strong>
+                <span>AM</span>
+              </div>
+
+              <div>
+                <h3>Database Systems</h3>
+                <p>BSIT 2B • Computer Lab 2</p>
+              </div>
+            </div>
+
+            <div class="teacher-schedule-item">
+              <div class="schedule-time-box">
+                <strong>1:00</strong>
+                <span>PM</span>
+              </div>
+
+              <div>
+                <h3>Software Engineering</h3>
+                <p>BSIT 3A • Room 204</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="teacher-panel">
+          <div class="section-header">
+            <h2>Quick Actions</h2>
+            <p>Common teacher tasks</p>
+          </div>
+
+          <div class="quick-actions">
+            <button class="quick-action-btn">View Students</button>
+            <button class="quick-action-btn">Manage Grades</button>
+            <button class="quick-action-btn">Assign Subjects</button>
+            <button class="quick-action-btn">View Schedule</button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="table-section">
+        <div class="section-header">
+          <h2>Assigned Subjects</h2>
+          <p>Subjects you are currently handling</p>
+        </div>
+
+        <table class="student-table">
+          <thead>
+            <tr>
+              <th>Subject Code</th>
+              <th>Subject Name</th>
+              <th>Section</th>
+              <th>Students</th>
+              <th>Schedule</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>IT101</td>
+              <td>Web Development</td>
+              <td>BSIT 2A</td>
+              <td>35</td>
+              <td>Mon 8:00 AM - 10:00 AM</td>
+            </tr>
+
+            <tr>
+              <td>IT102</td>
+              <td>Database Systems</td>
+              <td>BSIT 2B</td>
+              <td>32</td>
+              <td>Tue 10:00 AM - 12:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>IT103</td>
+              <td>Software Engineering</td>
+              <td>BSIT 3A</td>
+              <td>28</td>
+              <td>Wed 1:00 PM - 3:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>IT104</td>
+              <td>System Integration</td>
+              <td>BSIT 4A</td>
+              <td>33</td>
+              <td>Fri 9:00 AM - 11:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Schedule</title>
+  <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        Student Portal
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="/student/dashboard" class="sidebar-link">Dashboard</a>
+        <a href="/student/profile" class="sidebar-link">Profile</a>
+        <a href="/student/grades" class="sidebar-link">Grades</a>
+        <a href="/student/subjects" class="sidebar-link">Subjects</a>
+        <a href="/student/schedule" class="sidebar-link active">Schedule</a>
+      </nav>
+
+      <button id="logout" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <h2>My Schedule</h2>
+
+        <div class="user-info">
+          <div class="avatar">S</div>
+          <div>
+            <p id="emailInfo">student@email.com</p>
+            <small id="roleInfo">student</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-header">
+        <h1>Class Schedule</h1>
+        <p>View your weekly class schedule and upcoming subjects.</p>
+      </section>
+
+      <section class="schedule-overview-grid">
+
+        <div class="schedule-overview-card">
+          <p>Today’s Classes</p>
+          <h2>2</h2>
+        </div>
+
+        <div class="schedule-overview-card">
+          <p>Next Class</p>
+          <h2>Web Development</h2>
+        </div>
+
+        <div class="schedule-overview-card">
+          <p>Class Time</p>
+          <h2>10:00 AM</h2>
+        </div>
+
+        <div class="schedule-overview-card">
+          <p>Total Weekly Classes</p>
+          <h2>6</h2>
+        </div>
+
+      </section>
+
+      <section class="weekly-schedule">
+
+        <div class="day-card">
+          <div class="day-header">
+            <h2>Monday</h2>
+            <span>2 Classes</span>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>10:00 AM</strong>
+              <span>12:00 PM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>Web Development</h3>
+              <p>IT101 • Mr. Santos</p>
+              <span class="room-badge">Room 301</span>
+            </div>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>1:00 PM</strong>
+              <span>3:00 PM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>Database Systems</h3>
+              <p>IT102 • Ms. Reyes</p>
+              <span class="room-badge">Computer Lab 2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <h2>Tuesday</h2>
+            <span>1 Class</span>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>8:00 AM</strong>
+              <span>10:00 AM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>Software Engineering</h3>
+              <p>IT103 • Mr. Cruz</p>
+              <span class="room-badge">Room 204</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <h2>Wednesday</h2>
+            <span>1 Class</span>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>9:00 AM</strong>
+              <span>11:00 AM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>System Integration</h3>
+              <p>IT104 • Ms. Garcia</p>
+              <span class="room-badge">Room 305</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <h2>Thursday</h2>
+            <span>1 Class</span>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>1:00 PM</strong>
+              <span>4:00 PM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>Capstone Project</h3>
+              <p>IT105 • Dr. Mendoza</p>
+              <span class="room-badge">Research Room</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <h2>Friday</h2>
+            <span>1 Class</span>
+          </div>
+
+          <div class="class-item">
+            <div class="class-time">
+              <strong>8:00 AM</strong>
+              <span>10:00 AM</span>
+            </div>
+
+            <div class="class-details">
+              <h3>Information Security</h3>
+              <p>IT106 • Mr. Rivera</p>
+              <span class="room-badge">Computer Lab 1</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
